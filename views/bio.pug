@@ -1,7 +1,6 @@
 html
-  head
-    include parent.pug
-    title Index
+  include head.pug
+  include navigation.pug
+  +title('Bio')
   body
-    h1 test
-    +test
+    +navbarBio

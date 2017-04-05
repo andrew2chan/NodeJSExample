@@ -7,18 +7,18 @@ var app = express();
   response.end();
 })*/
 
-app.set('view engine', 'pug')
+app.set('view engine', 'pug');
 
 app.get('/', function(req, res) { //index route
   res.render('index')
 });
 
 app.get('/bio', function(req, res) { //index route
-  res.end("bio");
+  res.render('bio');
 });
 
 app.get('/about', function(req, res) { //index route
-  res.end("about");
+  res.render("about");
 });
 
 app.listen(8080);
