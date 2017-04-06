@@ -1,6 +1,9 @@
-html
+extends parent.pug
+
+block titleInfo
   include head.pug
+  +head('Bio')
+
+block navbar
   include navigation.pug
-  +title('Bio')
-  body
-    +navbarBio
+  +navbarBio

@@ -1,7 +1,5 @@
-head
-    include parent.pug
+mixin head(title)
+  head
+    title=title
     style
-      +style
-
-mixin title(titleName)
-  title= titleName
+      include ../css/stylesheet.css

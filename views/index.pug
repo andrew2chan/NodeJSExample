@@ -1,6 +1,9 @@
-html
+extends parent.pug
+
+block titleInfo
   include head.pug
+  +head('Index')
+
+block navbar
   include navigation.pug
-  +title('Index')
-  body
-    +navbarHome
+  +navbarHome
